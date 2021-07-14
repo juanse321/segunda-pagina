@@ -1,0 +1,105 @@
+*{
+	box-sizing: content-box;
+}
+.contenedor{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-gap:20px;
+}
+.barra{
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	background:#000000;
+	height:60px;
+	grid-column: 1/-1;
+
+	
+
+}
+
+
+.barra  li{
+
+	
+	align-items: space-between;
+	display: inline-block;
+	
+
+}
+
+/*################################################################*/
+.barra a{
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding:20px;
+
+
+}
+.barra a:hover{
+	color: #52057B;
+	background:#FECD1A;
+}
+
+/*lateral*/
+.aside{
+	display: flex;
+	justify-content: right;
+	align-items: right;
+	background:green;
+	
+	height:20px auto;
+	width:300px;
+	
+	
+
+}
+
+
+.aside  li{		
+	display: block;
+
+}
+
+.aside a{
+	text-align: left;
+	font-size: 30px;
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 28px;
+
+}
+.aside a:hover{
+
+	color: #52057B;
+	background:#FECD1A;
+}
+.article {
+	grid-column: 2/5	;
+	
+}
+
+h3{
+	font-size:32px;
+	font-family: sans-serif;
+
+}
+hr{
+
+	height:5px;
+	width:20%;
+	grid-column:2/3;
+
+	background: orange;
+	
+	
+}
+p{
+		
+	margin: 20px;
+
+}
